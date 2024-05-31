@@ -1,0 +1,160 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mental Health Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+
+
+</head>
+<body>
+    
+    <div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="index.html">Mind Garden </a>
+                <div class="logopics">
+                    <a href="index.html"><img src="images/brain.png" alt="" style= "width:100px; height:100px;"></a>
+                </div>
+                
+			</div>
+                        
+			<ul>
+				<li class="selected">
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="about.html">about</a>
+				</li>
+				<li>
+					<a href="BasicInfo.html">Basic info</a>
+				</li>
+				<li>
+					<a href="GetHelp.html">Get Help<i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="involved.html">Get Involved</a></li>
+                        <li><a href="video.html" class="active">watch videos</a></li>
+                    </ul>
+				</li>
+				<li>
+					<a href="contact.html">contact</a>
+				</li>
+                
+			</ul>
+            <div class="clearfix"></div>
+		</div>
+	</div>
+    
+    
+    
+    <div class="video">
+        <h1>Mental Health Awareness Videos</h1>
+        <hr>
+        <div class="row-v">
+            <div class="col-v">
+                <div class="feature-img">
+                    <img src="videos/well-being-lightbulb.jpg" width="100%">
+                    <div class="play-btn"><i class="fas fa-play-circle" onclick="playVideo('videos/vid1.mp4')"></i></div>
+                </div>
+            </div>
+            <div class="col-v">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="videos/image1.png" >
+                        <div class="play-btn"><i class="fas fa-play-circle" onclick="playVideo('videos/vid2.mp4')"></i></div>
+                    </div>
+                    <p>To help you to look after your mental health.</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="videos/image2.png" >
+                        <div class="play-btn"><i class="fas fa-play-circle" onclick="playVideo('videos/vid3.mp4')"></i></div>
+                    </div>
+                    <p>To help you to look after your mental health.</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="videos/img3.png">
+                        <div class="play-btn"><i class="fas fa-play-circle" onclick="playVideo('videos/vid4.mp4')"></i></div>
+                    </div>
+                    <p>To help you to look after your mental health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player"  id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="videos/vid3.mp4" type="video/mp4">
+        </video>
+        <div class="close-btn"><i class="fas fa-times-circle" onclick="stopVideo()"></i></div>
+    </div>
+    
+
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("myVideo");
+    
+    
+    function stopVideo(){
+        
+        videoPlayer.style.display = "none";
+    }
+    
+    function playVideo(file){
+        
+        myVideo.scr=file;
+        videoPlayer.style.display = "block";
+    }
+
+</script>    
+    
+    
+    
+    
+	<footer>
+        <div class="mg">
+            <i class="fas fa-brain"></i>
+            <h3>Mind Garden</h3>
+            <small>For better Mental Health</small>
+        </div>
+        <div class="connect-h"> 
+            <p>social contact</p>
+            <hr>
+			<div class="connect">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-at"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i><br>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-google-plus-g"></i>
+			</div>
+            </div>
+        <div class="quick">
+            <p>Quick Links</p>
+            <hr> 
+            <ul>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="contact.html">Reach Us</a>
+                </li>
+                <li>
+                    <a href="privacy.html">Privacy and policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+			<p>
+				&copy; copyright 2023 Mind Garden | all rights reserved.
+			</p>
+		</div>
+	
+   </footer>
+   
+</body>
+</html>    
